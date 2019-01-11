@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.chikli.demo.chikli.demo'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'io.cucumber:cucumber-java8:4.2.0'
+    testCompile 'io.cucumber:cucumber-junit:4.2.0'
+}
