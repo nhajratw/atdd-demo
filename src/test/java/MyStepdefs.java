@@ -1,4 +1,3 @@
-import com.chikli.demo.Something;
 import cucumber.api.java8.En;
 
 import static org.hamcrest.core.Is.is;
