@@ -1,7 +1,6 @@
 import cucumber.api.java8.En;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class MyStepdefs implements En {
 
@@ -17,7 +16,7 @@ public class MyStepdefs implements En {
             message = something.message();
         });
         Then("^it should say \"([^\"]*)\"$", (String result) -> {
-            assertThat(message, is(result));
+            assertThat(message).isEqualTo(result);
         });
     }
 }
