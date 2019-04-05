@@ -9,14 +9,13 @@ public class MyStepdefs implements En {
     private String message;
 
     public MyStepdefs() {
-        Given("^I have something$", () -> {
-            something = new Something();
-        });
-        When("^I get a message from it$", () -> {
-            message = something.message();
-        });
-        Then("^it should say \"([^\"]*)\"$", (String result) -> {
-            assertThat(message).isEqualTo(result);
-        });
+        Given("^I have something$", () ->
+                something = new Something());
+
+        When("^I get a message from it$", () ->
+                message = something.message());
+
+        Then("^it should say \"([^\"]*)\"$", (String result) ->
+                assertThat(message).isEqualTo(result));
     }
 }

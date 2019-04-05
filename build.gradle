@@ -3,7 +3,7 @@ plugins {
     id 'com.github.ben-manes.versions' version '0.21.0'
 }
 
-group 'com.chikli.demo.chikli.demo'
+group 'com.chikli.demo'
 version '1.0'
 
 sourceCompatibility = 1.8
